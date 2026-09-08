@@ -1,14 +1,12 @@
 import { useState } from 'react'
-import ProjectVisual from './ProjectVisual'
 
 export default function ImageCarousel({ project }) {
-  const slides = [
-    { type: 'visual', visual: project.visual, accent: project.accent, title: project.name },
-    ...(project.gallery || []).map((item) => ({ type: 'image', ...item })),
-  ]
+  const slides = project.gallery || []
   const [index, setIndex] = useState(0)
   const total = slides.length
   const slide = slides[index]
+
+  if (!slide) return null
 
   const go = (dir) => {
     setIndex((current) => (current + dir + total) % total)
@@ -17,12 +15,8 @@ export default function ImageCarousel({ project }) {
   return (
     <div className="img-carousel">
       <div className="img-carousel__stage">
-        <div className={`img-carousel__frame ${slide.type === 'image' ? 'is-photo' : 'is-visual'}`}>
-          {slide.type === 'visual' ? (
-            <ProjectVisual type={slide.visual} accent={slide.accent} />
-          ) : (
-            <img src={slide.src} alt={slide.title || project.name} className="img-carousel__photo" />
-          )}
+        <div className="img-carousel__frame is-photo">
+          <img src={slide.src} alt={slide.title || project.name} className="img-carousel__photo" />
         </div>
       </div>
 

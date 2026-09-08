@@ -51,8 +51,6 @@ export const projects = [
       'Plataforma del Grupo Scout No.1 Los Intrépidos, Rama Rover. Conecta la ruta de progresión, el proyecto de vida, el libro de oro y los proyectos de servicio. Seguimiento claro, interactividad y una experiencia moderna para cada Rover.',
     role: 'Producto y desarrollo',
     tags: ['Scouts', 'Progresión', 'Auth', 'React'],
-    accent: '#C26A3A',
-    visual: 'maya',
     gallery: [
       { title: 'Inicio', src: '/projects/cloud-maya-inicio.png' },
       { title: 'Progresión', src: '/projects/cloud-maya-progresion.png' },
@@ -70,8 +68,6 @@ export const projects = [
       'E-commerce de boletos para conciertos y eventos. Buscar por ciudad, fecha y artista, recorrer el calendario y comprar tickets sin fricción. UTCKET conecta a los fans con los eventos que importan.',
     role: 'Frontend y experiencia',
     tags: ['Eventos', 'Ticketing', 'E-commerce', 'React'],
-    accent: '#3D6B5A',
-    visual: 'ticket',
     gallery: [
       { title: 'Inicio', src: '/projects/utcket-inicio.png' },
       { title: 'Conciertos', src: '/projects/utcket-conciertos.jpg' },
@@ -89,8 +85,6 @@ export const projects = [
       'Plataforma de cupones y descuentos en El Salvador. Explorar ofertas sin cuenta, registrarse en segundos y acceder a códigos exclusivos, descarga en PDF e historial de compras. Una UI clara, pensada para volver a abrirla antes de cada gasto.',
     role: 'Producto y desarrollo',
     tags: ['Cupones', 'Marketplace', 'Auth', 'UX'],
-    accent: '#B85C38',
-    visual: 'coupon',
     gallery: [
       { title: 'Explorar', src: '/projects/cuponera-explorar.png' },
       { title: 'Registro', src: '/projects/cuponera-registro.png' },
