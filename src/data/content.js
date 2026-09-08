@@ -2,7 +2,7 @@ export const profile = {
   name: 'AJ Cruz',
   shortName: 'AJ',
   role: 'Desarrollador de software',
-  location: 'Latinoamérica',
+  location: 'El Salvador',
   email: 'ajcruzlinares05@gmail.com',
   headline: 'Productos digitales con carácter y detalle.',
   subhead:
@@ -46,22 +46,18 @@ export const projects = [
     number: '01',
     name: 'Cloud Maya',
     year: '2024',
-    tagline: 'Operaciones en la nube, con una interfaz que no se siente técnica.',
+    tagline: 'El espacio del clan: progresión, proyectos y memoria en un solo lugar.',
     description:
-      'Plataforma cloud para centralizar operaciones, servicios y datos en un solo lugar. El objetivo fue traducir procesos complejos a una experiencia limpia: tableros claros, flujos ágiles y visibilidad en tiempo real para equipos que necesitan moverse rápido.',
+      'Plataforma del Grupo Scout No.1 Los Intrépidos, Rama Rover. Conecta la ruta de progresión, el proyecto de vida, el libro de oro y los proyectos de servicio. Seguimiento claro, interactividad y una experiencia moderna para cada Rover.',
     role: 'Producto y desarrollo',
-    tags: ['SaaS', 'Cloud', 'Dashboards', 'React'],
+    tags: ['Scouts', 'Progresión', 'Auth', 'React'],
     accent: '#C26A3A',
     visual: 'maya',
     gallery: [
-      {
-        title: 'Tablero',
-        src: '/projects/cloud-maya-dashboard.png',
-      },
-      {
-        title: 'Operaciones',
-        src: '/projects/cloud-maya-ops.png',
-      },
+      { title: 'Inicio', src: '/projects/cloud-maya-inicio.png' },
+      { title: 'Progresión', src: '/projects/cloud-maya-progresion.png' },
+      { title: 'Iniciar sesión', src: '/projects/cloud-maya-login.png' },
+      { title: 'Crear cuenta', src: '/projects/cloud-maya-registro.png' },
     ],
   },
   {
@@ -69,22 +65,18 @@ export const projects = [
     number: '02',
     name: 'Utcket',
     year: '2024',
-    tagline: 'Boletos, eventos y control de acceso sin fricción.',
+    tagline: 'Los mejores conciertos de la ciudad, a un clic.',
     description:
-      'Plataforma de ticketing para crear, vender y validar boletos. Pensada para el momento de mayor presión: la entrada. Compra en segundos, QR confiable y un flujo de check-in que no se traba cuando la fila empieza a crecer.',
+      'E-commerce de boletos para conciertos y eventos. Buscar por ciudad, fecha y artista, recorrer el calendario y comprar tickets sin fricción. UTCKET conecta a los fans con los eventos que importan.',
     role: 'Frontend y experiencia',
-    tags: ['Eventos', 'Ticketing', 'QR', 'Tiempo real'],
+    tags: ['Eventos', 'Ticketing', 'E-commerce', 'React'],
     accent: '#3D6B5A',
     visual: 'ticket',
     gallery: [
-      {
-        title: 'Evento',
-        src: '/projects/utcket-evento.png',
-      },
-      {
-        title: 'Check-in',
-        src: '/projects/utcket-checkin.png',
-      },
+      { title: 'Inicio', src: '/projects/utcket-inicio.png' },
+      { title: 'Conciertos', src: '/projects/utcket-conciertos.jpg' },
+      { title: 'Calendario', src: '/projects/utcket-calendario.png' },
+      { title: 'Nosotros', src: '/projects/utcket-nosotros.png' },
     ],
   },
   {
@@ -94,20 +86,15 @@ export const projects = [
     year: '2023',
     tagline: 'Ahorrar debería sentirse como un pequeño triunfo.',
     description:
-      'Aplicación de cupones y ofertas para el día a día. Descubrir promociones, canjear beneficios y convertir cada compra en una oportunidad de ahorro. Una UI cercana, con jerarquía clara y una experiencia pensada para volver a abrirla antes de ir al súper.',
+      'Plataforma de cupones y descuentos en El Salvador. Explorar ofertas sin cuenta, registrarse en segundos y acceder a códigos exclusivos, descarga en PDF e historial de compras. Una UI clara, pensada para volver a abrirla antes de cada gasto.',
     role: 'Producto y desarrollo',
-    tags: ['Mobile', 'Cupones', 'Fidelización', 'UX'],
+    tags: ['Cupones', 'Marketplace', 'Auth', 'UX'],
     accent: '#B85C38',
     visual: 'coupon',
     gallery: [
-      {
-        title: 'Ofertas',
-        src: '/projects/cuponera-ofertas.png',
-      },
-      {
-        title: 'Cupones',
-        src: '/projects/cuponera-cupones.png',
-      },
+      { title: 'Explorar', src: '/projects/cuponera-explorar.png' },
+      { title: 'Registro', src: '/projects/cuponera-registro.png' },
+      { title: 'Iniciar sesión', src: '/projects/cuponera-login.png' },
     ],
   },
 ]
