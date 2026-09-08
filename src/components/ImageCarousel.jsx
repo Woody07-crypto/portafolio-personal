@@ -17,7 +17,7 @@ export default function ImageCarousel({ project }) {
   return (
     <div className="img-carousel">
       <div className="img-carousel__stage">
-        <div className="img-carousel__frame">
+        <div className={`img-carousel__frame ${slide.type === 'image' ? 'is-photo' : 'is-visual'}`}>
           {slide.type === 'visual' ? (
             <ProjectVisual type={slide.visual} accent={slide.accent} />
           ) : (

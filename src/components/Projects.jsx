@@ -14,16 +14,21 @@ function SienaScene({ project }) {
 
   const clipPath = useTransform(
     scrollYProgress,
-    [0, 0.55],
-    ['inset(4% 4% round 1.6rem)', 'inset(0% 0% round 1.35rem)'],
+    [0, 0.62],
+    ['inset(10% 12% round 2.2rem)', 'inset(0% 0% round 0rem)'],
   )
-  const imageScale = useTransform(scrollYProgress, [0, 0.55], [1.04, 1])
-  const copyY = useTransform(scrollYProgress, [0.12, 0.48], [24, 0])
-  const copyOpacity = useTransform(scrollYProgress, [0.08, 0.4], [0.35, 1])
+  const copyY = useTransform(scrollYProgress, [0.35, 0.7], [36, 0])
+  const copyOpacity = useTransform(scrollYProgress, [0.32, 0.62], [0, 1])
 
   return (
     <article ref={ref} className="siena-scene">
       <div className="siena-scene__sticky">
+        <motion.div className="siena-scene__mask" style={{ clipPath, WebkitClipPath: clipPath }}>
+          <div className="siena-scene__media">
+            <ImageCarousel project={project} />
+          </div>
+        </motion.div>
+
         <motion.div className="siena-scene__copy" style={{ y: copyY, opacity: copyOpacity }}>
           <div className="project__meta">
             <span>{project.number}</span>
@@ -42,12 +47,6 @@ function SienaScene({ project }) {
               </li>
             ))}
           </ul>
-        </motion.div>
-
-        <motion.div className="siena-scene__mask" style={{ clipPath, WebkitClipPath: clipPath }}>
-          <motion.div className="siena-scene__media" style={{ scale: imageScale }}>
-            <ImageCarousel project={project} />
-          </motion.div>
         </motion.div>
       </div>
     </article>
