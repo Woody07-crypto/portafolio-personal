@@ -1,7 +1,6 @@
 import SplitText from './bits/SplitText'
 import StarBorder from './bits/StarBorder'
 import Magnet from './bits/Magnet'
-import GradientText from './bits/GradientText'
 import { profile } from '../data/content'
 
 export default function Hero() {
@@ -49,17 +48,6 @@ export default function Hero() {
             </a>
           </Magnet>
         </div>
-      </div>
-
-      <div className="hero__scroll">
-        <span>Scroll</span>
-        <div className="hero__scroll-line" />
-      </div>
-
-      <div className="hero__accent-word" aria-hidden="true">
-        <GradientText colors={['#C26A3A', '#C9A36A', '#8B5E3C']} animationSpeed={10}>
-          Cloud · Tickets · Cupones
-        </GradientText>
       </div>
     </section>
   )
