@@ -13,7 +13,7 @@ export const profile = {
   ],
   socials: [
     { label: 'GitHub', href: 'https://github.com/Woody07-crypto' },
-    { label: 'LinkedIn', href: 'https://linkedin.com' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/alejandro-javier-cruz-linares-57184a31a/' },
     { label: 'Email', href: 'mailto:ajcruzlinares05@gmail.com' },
   ],
 }
